@@ -5,7 +5,6 @@ import {
   Text,
   View,
   TouchableOpacity,
-  Slider,
   TouchableWithoutFeedback,
   Dimensions,
 } from 'react-native';
@@ -374,14 +373,7 @@ export default class CameraScreen extends React.Component {
               flexDirection: 'row',
               alignSelf: 'flex-end',
             }}
-          >
-            <Slider
-              style={{ width: 150, marginTop: 15, alignSelf: 'flex-end' }}
-              onValueChange={this.setFocusDepth.bind(this)}
-              step={0.1}
-              disabled={this.state.autoFocus === 'on'}
-            />
-          </View>
+          />
           <View
             style={{
               height: 56,
